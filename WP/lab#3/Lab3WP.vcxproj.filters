@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Drawings">
+      <UniqueIdentifier>{7fec00e3-9be5-4647-a71c-35b56a301c89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Drawings">
+      <UniqueIdentifier>{99319ec3-a6b6-4140-8591-d4fc71119804}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Project">
+      <UniqueIdentifier>{cccf4a71-fb91-477d-a9d0-ec5b465d6def}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Project">
+      <UniqueIdentifier>{00856849-6427-4fd4-ad84-da1ee1b9c7ba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Drawing.h">
+      <Filter>Header Files\Drawings</Filter>
+    </ClInclude>
+    <ClInclude Include="Ellipse.h">
+      <Filter>Header Files\Drawings</Filter>
+    </ClInclude>
+    <ClInclude Include="Line.h">
+      <Filter>Header Files\Drawings</Filter>
+    </ClInclude>
+    <ClInclude Include="TwoPointDrawing.h">
+      <Filter>Header Files\Drawings</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeHand.h">
+      <Filter>Header Files\Drawings</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab3WP.h">
+      <Filter>Header Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Header Files\Drawings</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiPointDrawing.h">
+      <Filter>Header Files\Drawings</Filter>
+    </ClInclude>
+    <ClInclude Include="PolygonDrawing.h">
+      <Filter>Header Files\Drawings</Filter>
+    </ClInclude>
+    <ClInclude Include="Bezier.h">
+      <Filter>Header Files\Drawings</Filter>
+    </ClInclude>
+    <ClInclude Include="Eraser.h">
+      <Filter>Header Files\Drawings</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Ellipse.cpp">
+      <Filter>Source Files\Drawings</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawing.cpp">
+      <Filter>Source Files\Drawings</Filter>
+    </ClCompile>
+    <ClCompile Include="Line.cpp">
+      <Filter>Source Files\Drawings</Filter>
+    </ClCompile>
+    <ClCompile Include="TwoPointDrawing.cpp">
+      <Filter>Source Files\Drawings</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeHand.cpp">
+      <Filter>Source Files\Drawings</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>Source Files\Drawings</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab3WP.cpp">
+      <Filter>Source Files\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiPointDrawing.cpp">
+      <Filter>Source Files\Drawings</Filter>
+    </ClCompile>
+    <ClCompile Include="PolygonDrawing.cpp">
+      <Filter>Source Files\Drawings</Filter>
+    </ClCompile>
+    <ClCompile Include="Bezier.cpp">
+      <Filter>Source Files\Drawings</Filter>
+    </ClCompile>
+    <ClCompile Include="Eraser.cpp">
+      <Filter>Source Files\Drawings</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Lab3WP.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Lab3WP.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
