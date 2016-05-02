@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.maxiannicu.pomodoro.viewmodels.PomodoroActivityViewModel"/>
+    </data>
+
+    <RelativeLayout xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.maxiannicu.pomodoro.MainActivity">
+
+        <com.maxiannicu.pomodoro.widgets.CircleProgressBar
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:progressBarColor="@color/colorPrimary"
+            custom:progressBarThickness="30dp"
+            custom:max="@{viewModel.max}"
+            custom:animateProgress="@{viewModel.progress}"
+            custom:progressText="@{viewModel.progressText}"
+            custom:progressTextColor="@color/colorAccent"
+            custom:progressTextSize="25sp"/>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progress"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{viewModel::start}"
+                android:src="@drawable/ic_play_circle_filled_black_48dp"
+                android:visibility="@{viewModel.startVisibility}"
+                />
+
+            <ImageView
+                android:id="@+id/btn_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{viewModel::stop}"
+                android:src="@drawable/ic_pause_circle_filled_black_48dp"
+                android:visibility="@{viewModel.stopVisibility}"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</layout>
